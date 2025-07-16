@@ -128,16 +128,6 @@ function execute_command()
         waitpid(child)
 ```
 
-## Notes
-
-* You should register the SIGCHLD signal at the beginning of your main as shown in [this example](https://docs.oracle.com/cd/E19455-01/806-4750/signals-7/index.html), so when a child dies, the parent process receives SIGCHLD (or SIGCLD) signal.
-* To see the set of all signals supported on your system, type, kill –l.
-* Use a process monitor package to monitor your processes. Provide a screenshot for your shell parent process and some child processes spawned as background processes. Suggested packages: KSysguard or Gnome-System-Monitor.
-* Reading [this article about waitpid(pid_t pid, int *statusPtr, int options)](https://support.sas.com/documentation/onlinedoc/sasc/doc/lr2/waitpid.htm) is a must.
-
-## 4. Deliverables
-
-* Complete C source code, commented thoroughly and clearly.
 
 ## Test Case
 
@@ -192,12 +182,6 @@ exit
 
 That's it!
 
-## Lab requirements
-
-* Students will be working individually.
-* You can only use C programming language.
-* Use Ubuntu operating system for development.
-* Submit your code to the online tester.
 
 ## Readings & Resources
 
